@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Added | Hamara Airbnb</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.0.0"></script>
+    <style>
+      .fade-in {
+        opacity: 0;
+        transform: translateY(-10px);
+        animation: fadeIn 1s ease-out forwards;
+      }
+      @keyframes fadeIn {
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+  </head>
+  <body class="min-h-screen bg-gray-50 flex flex-col">
+    <nav class="bg-white shadow-md py-3 px-4 md:px-10 flex justify-between items-center border-b">
+      <div class="flex items-center space-x-2">
+        <i class="fas fa-home text-red-500 text-2xl"></i>
+        <span class="text-xl font-bold text-gray-800">Hamara Airbnb</span>
+      </div>
+      <div class="hidden md:flex space-x-4">
+        <a href="/" class="text-gray-700 hover:text-red-500">Home</a>
+        <a href="/about" class="text-gray-700 hover:text-red-500">About</a>
+        <a href="/contact" class="text-gray-700 hover:text-red-500">Contact</a>
+      </div>
+      <a href="/host/add-home" class="bg-red-500 hover:bg-red-600 text-white font-semibold py-2 px-4 rounded-lg transition transform hover:scale-105">
+        <i class="fas fa-plus mr-2"></i> Add Home
+      </a>
+    </nav>
+
+    <main class="flex-grow flex items-center justify-center px-4 py-12">
+      <div class="bg-white rounded-lg shadow-lg p-8 max-w-md w-full text-center fade-in">
+        <div class="w-20 h-20 mx-auto bg-green-100 rounded-full flex items-center justify-center mb-6">
+          <i class="fas fa-check text-green-500 text-4xl"></i>
+        </div>
+        
+        <h1 class="text-3xl font-bold text-gray-800 mb-2">Home Added Successfully!</h1>
+        <p class="text-gray-600 mb-8">Your property has been successfully added and is now live.</p>
+        
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+          <a href="/" class="bg-red-500 hover:bg-red-600 text-white font-semibold py-3 px-6 rounded-lg transition transform hover:scale-105">
+            <i class="fas fa-home mr-2"></i> View Listings
+          </a>
+          <a href="/host/add-home" class="bg-gray-200 hover:bg-gray-300 text-gray-800 font-semibold py-3 px-6 rounded-lg transition transform hover:scale-105">
+            <i class="fas fa-plus mr-2"></i> Add Another
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-6 flex flex-col items-center">
+      <p>&copy; 2025 Hamara Airbnb. All rights reserved.</p>
+      <div class="flex space-x-4 mt-3">
+        <a href="#" class="hover:text-gray-400"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="hover:text-gray-400"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="hover:text-gray-400"><i class="fab fa-instagram"></i></a>
+      </div>
+    </footer>
+
+    <script>
+      window.onload = function () {
+        confetti({ particleCount: 100, spread: 70, origin: { y: 0.6 } });
+      };
+    </script>
+  </body>
+</html>
