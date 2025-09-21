@@ -1,15 +1,15 @@
-🏡 Airbnb Clone
+##🏡 Airbnb Clone
 
-A full-stack web application that replicates core Airbnb features such as property listings, booking management, and user authentication.
+#A full-stack web application that replicates core Airbnb features such as property listings, booking management, and user authentication.
 
-✨ Features
+##✨ Features
  
-User Authentication – Sign up, log in/out, secure sessions.
+#User Authentication – Sign up, log in/out, secure sessions.
 
-Property Listings – Create, edit, and delete property details with images and pricing.
+#Property Listings – Create, edit, and delete property details with images and pricing.
 
-Search & Filters – Search by location, dates, guests, and price range.
+#Search & Filters – Search by location, dates, guests, and price range.
 
-Booking System – Real-time availability and reservation management.
+#Booking System – Real-time availability and reservation management.
 
-Responsive UI – Optimized for desktop, tablet, and mobile.
+#Responsive UI – Optimized for desktop, tablet, and mobile.
