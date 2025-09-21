@@ -33,3 +33,27 @@ Once the server is running, you can interact with the application through these 
 - **Homepage**: Displays all home listings.
 - **Homes List**: A dedicated page that lists all available properties for rent.
 - **Favorites**: View all the properties you have marked as favorites.
+---
+
+## 🔗 API Endpoints
+The application exposes a set of RESTful API endpoints to manage properties and user interactions.
+
+### 🏠 Store Routes
+| Method | Endpoint | Description |
+|--------|---------|-------------|
+| **GET**  | `/`                       | Retrieves the main index page with all homes. |
+| **GET**  | `/homes`                  | Fetches a list of all available homes. |
+| **GET**  | `/homes/:homeId`          | Displays detailed information for a specific home. |
+| **GET**  | `/favourites`             | Shows the list of homes the user has favorited. |
+| **POST** | `/favourites`             | Adds a home to the user's favorites. |
+| **POST** | `/favourites/delete/:homeId` | Removes a home from the user's favorites. |
+
+### 👩‍💼 Host Routes
+| Method | Endpoint | Description |
+|--------|---------|-------------|
+| **GET**  | `/add-home`               | Renders the form to add a new home. |
+| **POST** | `/add-home`               | Submits the data for a new home listing. |
+| **GET**  | `/host-home-list`         | Displays the list of homes managed by the host. |
+| **GET**  | `/edit-home/:homeId`      | Renders the form to edit an existing home's details. |
+| **POST** | `/edit-home`              | Submits the updated information for a home. |
+| **POST** | `/delete-home/:homeId`    | Deletes a home listing. |
